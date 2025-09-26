@@ -2,8 +2,8 @@
 <html>    
 <head>    
     <title>Prediction</title>   
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/3228952.png') }}" type="image/x-icon"> 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/result.css') }}"> 
+    <link rel="shortcut icon" href="{{ url_for(filename='images/3228952.png') }}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for(filename='css/result.css') }}"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />     
     <!-- <link rel="stylesheet" type="text/css" href="style.css">         -->
    
@@ -12,7 +12,7 @@
 <body> 
     <nav id="nav">
         <div id="logo">
-            <img src="{{ url_for('static', filename='images/3228952.png') }}" alt="Logo" id="img">
+            <img src="{{ url_for(filename='images/3228952.png') }}" alt="Logo" id="img">
             <h3  id="agro">Agrow</h3>
         </div>
         <div id="list">
@@ -44,4 +44,5 @@
     </footer>
 </div>
 </body>    
+
 </html>
