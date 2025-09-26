@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* body::before
+{
+    
+    content: " ";
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+    background-image: url('../images/3228952.png');
+    background-position:center;
+    background-attachment: fixed;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size:25rem;  
+    
+
+} */
+#nav{
+    width:100%;
+    height: 65px;
+    background-color: rgb(0, 166, 19);
+    color: white;
+    position: static;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.5),0 6px 20px 0 rgba(0,0,0, 0.2);
+    z-index: 100;
+    /* background-color: #7323d4; */
+    border-radius: 6px;
+   
+}
+#logo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+}
+#imgl{
+    width: 35px;
+    height: 35px;
+    filter: invert(10);
+}
+#agro{
+    font-size: 25px;
+}
+#list{
+    display: flex;
+}
+#list ul li{
+    list-style: none;
+    float: left;
+    color: white ;
+    margin-left: 18px;
+}
+#list ul li a{
+    
+    color: white ;
+    font-size: 17px;
+    text-decoration: none;
+}
+#list ul li :hover{
+    color:rgb(79, 69, 69);
+    text-decoration: underline 1px solid rgb(79, 69, 69);
+}
+
+body{
+    /* background-color:rgb(243, 239, 247); */
+    background-color: rgba(0,0,0, 0.1);
+
+}
+#heading{
+    text-align: center;
+    margin:25px;
+    font-size: x-large;
+}
+#cardcontainer{
+    width: 70%;
+    height: 450px;
+    display: flex;
+    text-align: center;
+    justify-items: cen;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    /* background-color:white; */
+
+}
+.img{
+    width: 85px;
+    height: 75px;
+    filter: invert(0.6);
+
+}
+.card{
+    color: black;
+    width: 290px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.5),0 6px 20px 0 rgba(0,0,0, 0.2);
+    transition: 0.6s;
+
+    /* z-index: -1; */
+}
+.card:hover{
+    transform: scale(1.1) ;
+    
+
+}
+.content{
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#table{
+    text-align: center ;
+    width: 79rem;
+    margin: auto;
+    height: 16rem;
+    margin-bottom: 45px;
+    
+   
+}
+#hd{
+    background: #363434;
+    color: white;
+    height: 3rem;
+}
+
+.grey{
+    background:rgba(0,0,0, 0.2);
+}
+.login{
+    /* display: flex;
+    flex-direction: column; */
+    position:relative;
+    color: black;
+    width: 30%;  
+    /* overflow: hidden;   */
+    margin: auto;  
+    margin-bottom: 20px;
+    margin: 20 0 0 300px;  
+    padding: 40px;  
+    background:rgba(255, 254, 254,0.9);
+    border-radius: 15px;
+    /* z-index: -1; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.5),0 6px 20px 0 rgba(0,0,0, 0.2);
+    transition: 0.6s;
+    
+ 
+}
+.login:hover{
+    transform: scale(0.95);
+}
+.imgp{
+    width: 200px;
+    margin: auto;
+}
+#predict
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+
+    
+}
+#footer{
+    width: 100%;
+    height: 60px;
+    color: white;
+    background:  rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 110px;
+}
+
+@media screen and (max-width : 1300px) {
+
+#nav{
+width:auto;
+height: 55px;
+color: white;
+display: flex;
+align-items: center;
+position: sticky;
+top: 0px;
+overflow: hidden;
+/* background-color: #7323d4; */
+}
+#logo{
+display: flex;
+justify-content: space-evenly;
+width: 100px;
+}
+#img{
+width: 25px;
+height: 25px;
+filter: invert(10);
+}
+#agro{
+font-size: 20px;
+}
+#cardcontainer {
+    display: none;
+}
+
+#list ul li{
+list-style: none;
+float: left;
+color: white ;
+margin-left: 15px;
+}
+#list ul li a{
+
+color: white ;
+font-size: 15px;
+text-decoration: none;
+}
+
+
+#heading{
+text-align: center;
+margin: 35px;
+font-size: 20px;
+}
+.login{
+position:relative;
+width: 70%;  
+overflow: hidden;  
+margin: auto;  
+margin-bottom: 20px;
+margin: 20 0 0 300px;  
+padding: 40px;  
+background:white  ;
+border-radius: 15px;
+z-index: -1;
+box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.5),0 6px 20px 0 rgba(0,0,0, 0.2);
+
+
+}
+#table
+{
+    width: 65%;
+    
+}
+#innertitle{
+font-size: 18px;
+}
+#predict{
+font-size: 14px;
+width: a500to;
+text-align: center;
+
+}
+}
