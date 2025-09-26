@@ -2,8 +2,8 @@
 <html>    
 <head>    
     <title>IoT_ML</title>   
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/3228952.png') }}" type="image/x-icon"> 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/IoT_ML.css') }}"> 
+    <link rel="shortcut icon" href="{{ url_for(filename='images/3228952.png') }}" type="image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for(filename='css/IoT_ML.css') }}"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
     
    
@@ -12,7 +12,7 @@
 <body> 
     <nav id="nav">
         <div id="logo">
-            <img src="{{ url_for('static', filename='images/3228952.png') }}" alt="Logo" id="imgl">
+            <img src="{{ url_for(filename='images/3228952.png') }}" alt="Logo" id="imgl">
             <h3  id="agro">Agrow</h3>
         </div>
         <div id="list">
@@ -30,42 +30,42 @@
     <h1 id="heading" >Real time data collected by IoT model :</h1>
     <div id="cardcontainer">
       <div class="card">
-        <img src="{{ url_for('static', filename='images/nitrogen.svg') }}" class="img" alt="">
+        <img src="{{ url_for(filename='images/nitrogen.svg') }}" class="img" alt="">
         <div class="content">
             <h3 class="title">Nitrogen</h3>
             <p class="desc">{{N}} mg/kg</p>
         </div>
     </div>
       <div class="card">
-        <img src="{{ url_for('static', filename='images/phosphrous.svg') }}" class="img" alt="">
+        <img src="{{ url_forfilename='images/phosphrous.svg') }}" class="img" alt="">
         <div class="content">
             <h3 class="title">Phosphrous</h3>
             <p class="desc">{{P}} mg/kg</p>
         </div>
     </div>
       <div class="card">
-        <img src="{{ url_for('static', filename='images/potassium.png') }}" class="img" alt="">
+        <img src="{{ url_for(filename='images/potassium.png') }}" class="img" alt="">
         <div class="content">
             <h3 class="title">Potassium</h3>
             <p class="desc">{{K}} mg/kg</p>
         </div>
     </div>
       <div class="card">
-        <img src="{{ url_for('static', filename='images/temp.svg') }}" class="img" alt="">
+        <img src="{{ url_for(filename='images/temp.svg') }}" class="img" alt="">
         <div class="content">
             <h3 class="title">Temperature</h3>
             <p class="desc">{{Temp}} °C</p>
         </div>
     </div>
       <div class="card">
-        <img src="{{ url_for('static', filename='images/humid1.svg') }}" class="img" alt="">
+        <img src="{{ url_for(filename='images/humid1.svg') }}" class="img" alt="">
         <div class="content">
             <h3 class="title">Humidity</h3>
             <p class="desc">{{Humid}} %</p>
         </div>
     </div>
       <div class="card">
-        <img src="{{ url_for('static', filename='images/ph.svg') }}" class="img" alt="">
+        <img src="{{ url_for(filename='images/ph.svg') }}" class="img" alt="">
         <div class="content">
             <h3 class="title">pH</h3>
             <p class="desc">{{pH}}</p>
@@ -127,4 +127,5 @@
     </footer>
 </div>
 </body>    
+
 </html>
